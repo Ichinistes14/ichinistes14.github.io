@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Content-Type: application/x-www-form-urlencoded">
+    <title>Jonathan Devlin</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body class="main-content">
+    <main id="main">
+        <section class="container about active" id="about">
+            <div class="main-title">
+                <h2>À propos <span>de moi</span><span class="bg-text">mes stats</span></h2>
+            </div>
+            <div class="about-container">
+                <div class="left-about">
+                    <h4>Information Sur Moi</h4>
+                    <p>
+                        Je m'appelle Jonathan Devlin, j'ai 17 ans et je suis actuellement en première année en BTS CIEL option B ER (Électronique et Réseaux) au lycée Jules Verne à Mondeville.
+                    </p>
+                </div>
+            </div>
+            <div class="about-stats">
+                <h4 class="stat-title">Mes Compétences</h4>
+                <div class="progress-bars">
+                    <div class="progress-bar">
+                        <p class="prog-title">Autonomie</p>
+                        <div class="progress-con">
+                            <p class="prog-text">80%</p>
+                            <div class="progress">
+                                <span class="html"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">Travail En Équipe</p>
+                        <div class="progress-con">
+                            <p class="prog-text">100%</p>
+                            <div class="progress">
+                                <span class="css"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">Compréhension docuentation technique</p>
+                        <div class="progress-con">
+                            <p class="prog-text">80%</p>
+                            <div class="progress">
+                                <span class="js"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">Capacité d'adaptation</p>
+                        <div class="progress-con">
+                            <p class="prog-text">65%</p>
+                            <div class="progress">
+                                <span class="react"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-stats">
+                <h4 class="stat-title">langues</h4>
+                <div class="progress-bars">
+                    <div class="progress-bar">
+                        <p class="prog-title">Français</p>
+                        <div class="progress-con">
+                            <p class="prog-text">100%</p>
+                            <div class="progress">
+                                <span class="css"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">Anglais</p>
+                        <div class="progress-con">
+                            <p class="prog-text">65%</p>
+                            <div class="progress">
+                                <span class="react"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h4 class="stat-title">Expériences professionnelles</h4>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="tl-duration">2021</p>
+                    <h5>Stagiaire<span> - IPSI</span></h5>
+                    <p>Bretteville-Sur-Odon, Normandie</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="tl-duration">2022</p>
+                    <h5>Stagiaire<span> - Alligator SAS</span></h5>
+                    <p>Massy, Île-De-France</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="tl-duration">2022</p>
+                    <h5>Stagiaire<span> - Alligator SAS</span></h5>
+                    <p>Massy, Île-De-France</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="tl-duration">2022</p>
+                    <h5>Stagiaire<span> - Alligator SAS</span></h5>
+                    <p>Massy, Île-De-France</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="tl-duration">2023</p>
+                    <h5>Stagiaire<span> - Serrurerie Voisin Fichet</span></h5>
+                    <p>Caen, Normandie</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="tl-duration">2023</p>
+                    <h5>Stagiaire<span> - Serrurerie Voisin Fichet</span></h5>
+                    <p>Caen, Normandie</p>
+                </div>
+            </div>
+            <h4 class="stat-title">études</h4>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <p class="tl-duration">2020</p>
+                    <h5>Brevet Des Collèges<span> - Mention Assez Bien</span></h5>
+                    <p>Collège Jean Moulin, Caen</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <p class="tl-duration">2023</p>
+                    <h5>Bac Pro SN (CIEL) Option SSIHT<span> - Mention Bien</span></h5>
+                    <p>Lycée Charles Tellier, Condé-En-Normandie</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <p class="tl-duration">EN COURS</p>
+                    <h5>BTS CIEL Option ER</h5>
+                    <p>Lycée Jules Verne, Mondeville</p>
+                </div>
+            </div>
+            <div class="about-container">
+                <div class="left-about">
+                    <h4>qualités &<br>centres d'intérêts</h4>
+                    <p>
+                        • À l'écoute
+                        <span style="margin-right: 5.6rem;"></span>
+                        • Rigueur<br>
+                        • Dynamisme
+                        <span style="margin-right: 4.3rem;"></span>
+                        • Motivation<br>
+                        • Sport Individuel
+                        <span style="margin-right: 2.5rem;"></span>
+                        • Voyage
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container contact" id="contact">
+            <div class="contact-container">
+                <div class="main-title">
+                    <h2>Me <span>Contacter</span><span class="bg-text">Contacter</span></h2>
+                </div>
+                <div class="contact-content-con">
+                    <div class="left-contact">
+                        <h4>Me contacter ici</h4>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Localisation</span>
+                                </div>
+                                <p>
+                                    Bretteville-Sur-Odon, France
+                                </p>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>Email</span>
+                                </div>
+                                <p>
+                                    <span>contact@jonathandevlin.site</span>
+                                </p>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-user-graduate"></i>
+                                    <span>Établissement scolaire</span>
+                                </div>
+                                <p>
+                                    <span>Lycée Jules Verne, Mondeville</span>
+                                </p>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-phone"></i>
+                                    <span>Numéro téléphone</span>
+                                </div>
+                                <p>
+                                    <span>07 85 73 86 19</span>
+                                </p>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-globe-africa"></i>
+                                    <span>Langues</span>
+                                </div>
+                                <p>
+                                    <span>French, English</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-contact">
+                        <form action="sendmail.php" method="post" class="contact-form">
+                            <div class="input-control i-c-2">
+                                <label for="name"></label>
+                                <input type="text" name="name" required placeholder="YOUR NAME">
+                                <label for="email"></label>
+                                <input type="email" name="email" required placeholder="YOUR EMAIL">
+                            </div>
+                            <div class="input-control">
+                                <label for="subject"></label>
+                                <input type="text" name="subject" irequired placeholder="ENTER SUBJECT">
+                            </div>
+                            <div class="input-control">
+                                <label for="message"></label>
+                                <textarea name="message" cols="15" rows="8" placeholder="Message Here..."></textarea>
+                            </div>
+                            <button type="submit" name="submit" class="submit">Envoyer</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="controls">
+        <div class="control active-btn" data-id="about">
+            <i class="fas fa-user"></i>
+        </div>
+        <div class="control" data-id="contact">
+            <i class="fas fa-envelope-open"></i>
+        </div>
+    </div>
+    <div class="theme-btn">
+        <i class="fas fa-adjust"></i>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
