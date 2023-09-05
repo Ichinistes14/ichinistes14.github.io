@@ -5,16 +5,16 @@ use PHPMailer\PHPMailer\SMTP;
 
 require "vendor/autoload.php";
 
-if (!array_key_exists('name', $_POST)) {
+if (!array_key_exists('name', $_GET)) {
     echo "no data";
     return;
 }
 
 $to = "contact@jonathandevlin.site";
-$name = $_POST['name'];
-$email = $_POST['email'];
-$message = $_POST['message'];
-$subject = $_POST['subject'];
+$name = $_GET['name'];
+$email = $_GET['email'];
+$message = $_GET['message'];
+$subject = $_GET['subject'];
 
 $mail = new PHPMailer(true);
 
