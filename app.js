@@ -1,20 +1,44 @@
-(function () {
-    [...document.querySelectorAll(".control")].forEach(button => {
-        button.addEventListener("click", function() {
-            document.querySelector(".active-btn").classList.remove("active-btn");
-            this.classList.add("active-btn");
-            document.querySelector(".active").classList.remove("active");
-            document.getElementById(button.dataset.id).classList.add("active");
-        })
+$(document).ready(function() {
+
+    $("#bin").on("input", function (v) {
+        let val = v.target.value;
+
+        if (val == "") {
+            $("#hex").val("");
+            $("#dec").val("");
+            return;
+        }
+
+        v.target.value = val.replace(/[^0-1]/g, '').trim();
+        $("#hex").val(Convertor.BinToHex(val));
+        $("#dec").val(Convertor.BinToDec(val));
     });
 
-    document.querySelector(".theme-btn").addEventListener("click", () => {
-        document.body.classList.toggle("light-mode");
-    });
-})();
+    $("#dec").on("input", function (v) {
+        let val = v.target.value;
 
-window.onbeforeunload = () => {
-  for(const form of document.getElementsByTagName('form')) {
-    form.reset();
-  }
-}
+        if (val == "") {
+            $("#hex").val("");
+            $("#bin").val("");
+            return;
+        }
+
+        v.target.value = val.replace(/[^0-1]/g, '').trim();
+        $("#hex").val(Convertor.DecToHex(val));
+        $("#bin").val(Convertor.DecToBin(val));
+    });
+
+    $("#hex").on("input", function (v) {
+        let val = v.target.value;
+        
+        if (val == "") {
+            $("#dec").val("");
+            $("#bin").val("");
+            return;
+        }
+
+        v.target.value = val.replace(/[^a-fA-F0-1]+/g, '').trim();
+        $("#dec").val(Convertor.HexToDec(val));
+        $("#bin").val(Convertor.HexToBin(val));
+    });
+});
