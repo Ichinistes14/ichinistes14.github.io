@@ -183,41 +183,6 @@ form{
   text-align: center;
 }
 
-#convertion{
-  width: 50%;
-}
-#convertion form{
-  width: 50%;
-}
-
-#resistor{
-  width: 50%;
-}
-#resistor form{
-  width: 50%;
-}
-
-#premierD{
-  width: 50%;
-}
-#premierD{
-  width: 35%;
-}
-
-#secondD{
-  width: 50%;
-}
-#secondD form{
-  width: 50%;
-}
-
-#puissance{
-  width: 50%;
-}
-#puissance form{
-  width: 50%;
-}
-
 .row{
   width: 100%;
   display: grid;
