@@ -103,8 +103,19 @@
         }
     }
 
+    class Systeme {
+        static two(a1, b1, c1, a2, b2, c2) {
+            a1=Number();b1=Number(b1);c1=Number(c1);a2=Number(a2);b2=Number(b2);c2=Number(c2);
+            let x = (c2*b1-c1*b2) / (a1*b2-a2*b1);
+            let y = (c1-a1*x) / b1;
+
+            return `Solution<br>x=${x} ; y=${y}`;
+        }
+    }
+
     this.Convertor = Convertor;
     this.Resistor = Resistor;
     this.Equation = Equation;
     this.Puissance = Puissance;
+    this.Systeme = Systeme;
 })(this);
