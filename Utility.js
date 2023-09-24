@@ -50,6 +50,61 @@
         }
     }
 
+    class Equation {
+        static Premier(A, B, C) {
+            let result;
+            A = Number(A);
+            B = Number(B);
+            C = Number(C);
+
+            let equa = C - B;
+
+            result = equa / A;
+
+            return result.toFixed(2);
+        }
+
+        static Second(A, B, C, D) {
+            let c = C;
+            A = Number(A);
+            B = Number(B);
+            C = Number(C);
+            D = Number(D);
+
+            if (D !== 0) {
+                C = C - D;
+            }
+
+            let discr = B * B - 4 * A * C;
+
+            if (discr > 0) {
+                let x1 = (-B - Math.sqrt(discr)) / (2 * A);
+                let x2 = (-B + Math.sqrt(discr)) / (2 * A);
+                return `${A}x²+${B}x+${c}=${D}(${A}x²+${B}x+${C}=0)<br>x1=${x1} x2=${x2}<br>Discriminant: ${discr}`;
+            } else if (discr == 0) {
+                let x = -B / (2 * A);
+                return `${A}x²+${B}x+${c}=${D}(${A}x²+${B}x+${C}=0)<br>x=${x}<br>Discriminant: ${discr}`;
+            } else {
+                return `${A}x²+${B}x+${c}=${D}<br>Pas de solution pour x`;
+            }
+        }
+    }
+
+    class Puissance {
+        constructor(num) {
+            return {
+                expo: function(expo) {
+                    return Math.pow(num, expo);
+                }
+            }
+        }
+        static Resolve(num, expo) {
+            return new Puissance(num).expo(expo)
+        }
+    }
+
     this.Convertor = Convertor;
     this.Resistor = Resistor;
+    this.Equation = Equation;
+    this.Puissance = Puissance;
 })(this);

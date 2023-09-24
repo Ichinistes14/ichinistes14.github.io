@@ -1,67 +1,162 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="Content-Type: application/x-www-form-urlencoded">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jonathan Devlin</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="manifest.json" />
 
     <script src="Utility.js"></script>
     <script src="jquery.js"></script>
     <script src="app.js"></script>
-</head>
+  </head>
 
-<body class="main-content">
-    <div class="container">
-        <h1>Convertion Binaire, Décimal, Héxadecimal</h1>
-        <form>
-            <div class="row">
-                <div class="column">
-                    <label for="bin">Binaire</label>
-                    <input type="number" id="bin">
-                </div>
-                <div class="column">
-                    <label for="dec">Décimal</label>
-                    <input type="number" id="dec">
-                </div>
-                <div class="column">
-                    <label for="hex">Héxadecimal</label>
-                    <input type="text" id="hex">
-                </div>
-            </div>
-        </form>
-        <hr>
-        <h1>Résistance dérivation</h1>
-        <form>
-            <div class="row">
-                <div class="column">
-                    <label for="r1">R1</label>
-                    <input type="text" id="r1" value="0">
-                </div>
-                <div class="column">
-                    <label for="r2">R2</label>
-                    <input type="text" id="r2" value="0">
-                </div>
-                <div class="column">
-                    <label for="r3">R3</label>
-                    <input type="text" id="r3" value="0">
-                </div>
-            </div>
-            <p id="rResult">Résultat :<br>0Ω</p>
-        </form>
+  <body class="main-content">
+    <!-- Navbar -->
+    <nav class="navbar">
+      <a class="logo">JONATHAN</a>
+      <div class="nav-links">
+        <ul>
+          <li class="active"><a id="b-bin">Binaire</a></li>
+          <li><a id="b-res">Résistance</a></li>
+          <li><a id="b-pre">Premier Degrée</a></li>
+          <li><a id="b-sec">Second Degrée</a></li>
+          <li><a id="b-pui">Puissance</a></li>
+        </ul>
+      </div>
+      <img
+        src="images/menu-btn.png"
+        alt="menu hamburger"
+        class="menu-hamburger"
+      />
+    </nav>
+    <!-- Convertion -->
+    <div id="convertion" class="container dActive">
+      <h1>Convertion Binaire, Décimal, Héxadecimal</h1>
+      <form>
+        <div class="row">
+          <div class="column">
+            <label for="bin">Binaire</label>
+            <input type="number" id="bin" value="0" />
+          </div>
+          <div class="column">
+            <label for="dec">Décimal</label>
+            <input type="number" id="dec" value="0" />
+          </div>
+          <div class="column">
+            <label for="hex">Héxadecimal</label>
+            <input type="text" id="hex" value="0" />
+          </div>
+        </div>
+      </form>
     </div>
-</body>
-
+    <!-- Resistor -->
+    <div id="resistor" class="container">
+      <h1>Résistance dérivation</h1>
+      <form>
+        <div class="row">
+          <div class="column">
+            <label for="r1">R1</label>
+            <input type="text" id="r1" value="0" />
+          </div>
+          <div class="column">
+            <label for="r2">R2</label>
+            <input type="text" id="r2" value="0" />
+          </div>
+          <div class="column">
+            <label for="r3">R3</label>
+            <input type="text" id="r3" value="0" />
+          </div>
+        </div>
+        <p id="rResult">Résultat :<br />0Ω</p>
+      </form>
+    </div>
+    <!-- Premier Degrée -->
+    <div id="premierD" class="container">
+      <h1>Équation Premier Degrée</h1>
+      <form>
+        <div class="row">
+          <div class="column">
+            <label for="aP">Ax</label>
+            <input type="text" id="aP" value="0" />
+          </div>
+          <div class="column">
+            <label for="bP">B</label>
+            <input type="text" id="bP" value="0" />
+          </div>
+          <div class="column">
+            <label for="cP">C</label>
+            <input type="text" id="cP" value="0" />
+          </div>
+        </div>
+        <p id="pResult">x = ?</p>
+      </form>
+    </div>
+    <!-- Second Degrée -->
+    <div id="secondD" class="container">
+      <h1>Équation Second Degrée</h1>
+      <form>
+        <div class="row">
+          <div class="column">
+            <label for="aS">Ax²</label>
+            <input type="text" id="aS" value="0" />
+          </div>
+          <div class="column">
+            <label for="bS">Bx</label>
+            <input type="text" id="bS" value="0" />
+          </div>
+          <div class="column">
+            <label for="cS">C</label>
+            <input type="text" id="cS" value="0" />
+          </div>
+          <div class="column">
+            <label for="dS">D (=?)</label>
+            <input type="text" id="dS" value="0" />
+          </div>
+        </div>
+        <p id="sResult">x = ?</p>
+      </form>
+    </div>
+    <!-- Puissance -->
+    <div id="puissance" class="container">
+      <h1>Puissance</h1>
+      <form>
+        <div class="row">
+          <div class="column">
+            <label for="num">Nombre</label>
+            <input type="number" id="num" value="0" />
+          </div>
+          <div class="column">
+            <label for="expo">Exposant</label>
+            <input type="number" id="expo" value="0" />
+          </div>
+        </div>
+        <p id="puResult">Résultat :<br />1</p>
+      </form>
+    </div>
+  </body>
 </html>
