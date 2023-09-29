@@ -91,6 +91,10 @@ body {
 }
 
 @media screen and (max-width: 1000px) {
+  body {
+    overflow: scroll;
+  }
+
   .navbar {
     padding: 0;
   }
@@ -133,6 +137,10 @@ body {
   .navbar .nav-links ul li {
     margin: 15px 0;
     font-size: 1.2em;
+  }
+
+  #system {
+    top: 60%;
   }
 }
 
