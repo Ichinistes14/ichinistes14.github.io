@@ -56,7 +56,7 @@ $(document).ready(function () {
     $("#dec").val(Convertor.BinToDec(val));
   });
   $("#dec").on("input", function (v) {
-    v.target.value = v.target.value.replace(/[^0-1]/g, "").trim();
+    v.target.value = v.target.value.replace(/[^0-9]/g, "").trim();
     let val = v.target.value;
 
     if (val == "") {
